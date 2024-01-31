@@ -1,8 +1,8 @@
 
-E-Commerce Shopping Cart App
+<h1>E-Commerce Shopping Cart App</h1>
 This is a simple E-Commerce Shopping Cart application built using React. The app allows users to browse products, view product details, add items to the shopping cart, and proceed to checkout. It is designed with a modular structure for better organization and scalability.
 
-Project Structure
+<h3>Project Structure</h3>
 The project follows a structured organization to enhance maintainability and readability:
 <pre>
     ├───assets
@@ -25,7 +25,7 @@ The project follows a structured organization to enhance maintainability and rea
 </pre>
 
 
-Technologies Used
+<h3>Technologies Used</h3>
 React: The main JavaScript library used for building the user interface.
 Bootstrap: Used for styling and layout.
 React-Bootstrap: A library of Bootstrap components adapted for React.
@@ -33,26 +33,14 @@ React-Icons: Provides a set of React components for popular icon libraries.
 React-Redux: Manages the global state of the application.
 React-Router-Dom: Handles client-side routing.
 
-Getting Started
+<h4>Getting Started</h4>
 Clone the repository:
-
-bash
-Copy code
 git clone https://github.com/your-username/e-commerce-app.git
-Navigate to the project directory:
+<h4>Navigate to the project directory:</h4>
 
-bash
-Copy code
 cd e-commerce-app
-Install dependencies:
-
-bash
-Copy code
+<h5>Install dependencies:</h5>
 npm install
-Start the development server:
-
-bash
-Copy code
 npm run dev
 Open your browser and visit http://localhost:3000 to view the app.
 
