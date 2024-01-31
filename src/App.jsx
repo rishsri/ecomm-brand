@@ -4,11 +4,20 @@ import './App.css'
 import Home from "./pages/homePage/Home"
 import CategoryProduct from './pages/product/CategoryProduct';
 import AllProducts from './pages/product/AllProducts';
-import SingleProductDetails from './pages/product/productDetails/singleProductDetails';
 import Contact from './pages/Contact';
 import Cart from "./pages/Cart";
+import SingleProductDetails from "./pages/product/productDetails/SingleProductDetails";
+import { useEffect } from "react";
+import {getAllProducts} from "./features/product/ProductSlice"
 
+import { useDispatch } from "react-redux";
 function App() {
+
+  const dispatch = useDispatch()
+
+  useEffect(() => {
+    dispatch(getAllProducts())
+  },[])
  
 
   return (

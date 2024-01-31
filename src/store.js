@@ -1,17 +1,20 @@
-
 import { configureStore } from "@reduxjs/toolkit";
-import { setupListeners } from "@reduxjs/toolkit/dist/query";
+// import { setupListeners } from "@reduxjs/toolkit";
+import CategorySlice from "./features/category/CategorySlice";
+import ProductSlice from "./features/product/ProductSlice";
+import CartSlice from "./features/cart/CartSlice";
 
-let store = configureStore(
-    {
-      reducer: {
-      },
-    },
-    initialState,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-  );
-  
+const initialState = {};
+const store = configureStore({
+  reducer: {
+    categories: CategorySlice,
+    products: ProductSlice,
+    carts: CartSlice,
+  },
+  preloadedState: initialState,
+  devTools: process.env.NODE_ENV !== "production",
+});
 
-  setupListeners(store.dispatch);
+// setupListeners(store.dispatch);
 
 export default store;
