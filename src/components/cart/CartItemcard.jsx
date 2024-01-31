@@ -8,7 +8,7 @@ import {
   increaseQuantity,
   decreaseQuantity,
   removeFormCart,
-} from "../../features/cart/CartSlicee";
+} from "../../features/cart/CartSlice";
 
 const CartItemCard = ({ item }) => {
   //set the product info to state

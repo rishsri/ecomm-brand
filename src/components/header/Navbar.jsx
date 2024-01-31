@@ -3,6 +3,7 @@ import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, NavLink } from "react-router-dom";
 import { fetchAllCategories } from "../../features/category/CategorySlice";
+import RightCartIcon from "../../components/cart/RightCartIcon" 
 
 const TopNavbar = () => {
   const { categories } = useSelector((state) => state.categories);
@@ -43,7 +44,12 @@ const TopNavbar = () => {
             <NavLink to={"/contact"} className="nav-link">
               Contact
             </NavLink>
+            <NavLink to={"/cart"} className="nav-link">
+              Cart
+            </NavLink>
           </Nav>
+        
+
         </Navbar.Collapse>
       </Container>
     </Navbar>
