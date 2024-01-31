@@ -4,8 +4,8 @@ This is a simple E-Commerce Shopping Cart application built using React. The app
 
 Project Structure
 The project follows a structured organization to enhance maintainability and readability:
-
-├───assets
+<pre>
+    ├───assets
 ├───components
 │   ├───cart
 │   ├───category
@@ -22,6 +22,8 @@ The project follows a structured organization to enhance maintainability and rea
     ├───homePage
     └───product
         └───productDetails
+</pre>
+
 
 Technologies Used
 React: The main JavaScript library used for building the user interface.
